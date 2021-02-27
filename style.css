@@ -1,0 +1,281 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   
+}
+.menu-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  z-index: 2;
+  display: none;
+}
+
+/* .btn {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: bold;
+  padding: 10px 20px;
+  background: #262626;
+  color: #fff;
+  font-size: 15px;
+  border: 1px solid #fff;
+} */
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+a {
+  color: rgb(104, 113, 104);
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  }
+.nav-brand {
+  width: 70px;
+  padding: 0px 0px 70px 40px;
+}
+.container {
+  width: 100%;
+  margin: auto;
+}
+.nav-main {
+    display: flex;
+   
+    justify-content: space-between;
+    align-items: center;
+   
+    height: 180px;
+    padding: 10px;
+    background: url("./img/img1.jpg") no-repeat center center/cover;
+    /* padding: 20px 20px 20px 10px; */
+    /* border-color: black; */
+    /* border-style: solid; */
+    border-width: 6px;
+
+  }
+ 
+  .nav-main ul {
+    display: flex;
+    padding-bottom: 70px;;
+  }
+  .nav-main ul li {
+    padding: 6px;
+  }
+
+  .nav-main ul li a{
+    color: rgb(103, 98, 98);
+    padding: 0px;
+  }
+  .nav-main ul li a:hover {
+    border-bottom: 2px solid blue;
+  }
+  .nav-main ul li i {
+
+  }
+
+
+
+
+
+
+
+  .showcase {
+    position: relative;
+    bottom: 77px;
+    width: 95%;
+    display: flex;
+    /* flex-direction: row; */
+    /* align-items: flex-end; */
+    text-align: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    color: red;
+    height: 77px;
+    opacity: 0.27;
+    background: rgb(186, 186, 172);
+    
+    /* background-clip: content-box; */
+    /* padding: 9px;
+    box-shadow: inset 0 0 0 9px orange; */
+    /*   */
+  
+  }
+header h2 {
+    opacity: 0.9;
+    padding-top: 10px;;
+  }
+  
+.sectionPic  {
+   /* width: 50px; */
+   position: relative;
+   bottom: 77px;
+   display: flex;
+   flex-direction: row;
+   margin-top: 10px;;
+   
+  }
+  .sectionPic  img{
+    width: 100%;
+    height: 250px;
+    border: 6px;
+    
+   border-color: rgb(208, 204, 204);;
+   border-style: solid;
+  }
+  .news-cards{
+    background-color: rgb(211, 206, 206);
+    position: relative;
+    top: -82px;
+   
+  }
+  .news-cards p {
+    position: relative;
+    top: -30px;
+    left: 20px;
+  }
+  .news-cards img {
+    /* display: flex;
+    justify-content: center; */
+    width: 100%;
+    height: 300px;
+  }
+  .news-cards h3 {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: flex-end; */
+  position: absolute;
+  bottom: -5px;
+  left: 3px;
+  }
+  time {
+  position: absolute;
+  color:#ccc;
+  top: -15px;
+  left: 3px;
+  }
+
+ .title-banner {
+  position: relative;
+  background-color: red;
+  color: white;
+  height: 50px;
+  bottom: 50px;
+  
+ }
+ .news-cards a {
+  padding: 10px 0;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  display: inline-block;
+  font-weight: bold;
+  position: relative;
+  top: -20px;
+  left: 14px;
+  color:#2f3640;
+  font-size: 0.85rem;
+}
+
+
+
+@media  (max-width: 500px) {
+ 
+    .menu-btn {
+      display: block;
+    }
+
+  .menu-btn:hover {
+    opacity: 0.5;
+  }
+  /* .body-content, .content{
+    display: block;
+  }   */
+  .nav-main ul.nav-menu li a{
+   color: rgb(213, 207, 207);
+  }
+  
+  .nav-main ul.nav-menu {
+   
+    display: block;
+    position: absolute;
+    color: rgb(245, 245, 245);
+    top: 0;
+    left: 0;
+    background: #2f3640;
+    width: 40%;
+    height: 100%;
+    border-right: #ccc 1px solid;
+    opacity: 0.9;
+    padding: 30px;
+    z-index: 1;
+    transform: translateX(-200px);
+
+  }
+
+  .nav-main ul.nav-menu.show {
+    transform: translateX(-20px);
+  }
+  
+}
+a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  
+}
+
+
+
+ @media  (max-width: 326px) { 
+  .nav-main {
+    height: 220px;
+    
+  }
+
+  .showcase {
+    bottom: 94px;
+    height: 94px;
+  }
+  
+  /* .container{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+  }  */
+
+  
+  /* .content1, .content2 */
+  .sectionPic {
+    display: flex;
+    flex-direction: column;
+
+  }
+  .nav-main ul.nav-menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #2f3640;
+    /* width: 50%; */
+    height: 100%;
+    border-right: #ccc 1px solid;
+    opacity: 0.9;
+    padding: 30px;
+    transform: translateX(-500px);
+    transition: transform 0.5s ease-in-out;
+  
+  }
+
+
+}
+ 
